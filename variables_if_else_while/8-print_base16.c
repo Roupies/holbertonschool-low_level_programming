@@ -9,8 +9,9 @@
 int main(void)
 {
 char hexNum;
-for (hexNum = '0'; hexNum <= 'F'; hexNum++)
+for (hexNum = '0'; hexNum <= 'f'; hexNum++)
 {
+if ((hexNum <= '9') || (hexNum >= 'a'))
 putchar(hexNum);
 }
 putchar('\n');
