@@ -9,8 +9,11 @@
 
 void more_numbers(void)
 {
-int ch;
-for (ch = 0; ch <= 14; ch++)
+char ch;
+char chm;
+
+for (ch = '0'; ch <= '9'; ch++)
 _putchar (ch);
-_putchar('\n');
+for (chm = '0'; chm <= '4'; chm++)
+putchar (chm);
 }
