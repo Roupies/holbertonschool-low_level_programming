@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - fonction pour imprimer un triangle
+ * print_triangle - fonction pour imprimer un triangle
  * @size: taille du triangle
  * Return: Always 0 (Success)
  */
