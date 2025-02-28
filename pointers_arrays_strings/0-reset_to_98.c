@@ -7,7 +7,6 @@
 
 void reset_to_98(int *n)
 {
-	int valeurdemandée = 98;
-	*n = valeurdemandée;
-		return;
+	int valeurdemandee = 98;
+	*n = valeurdemandee;
 }
