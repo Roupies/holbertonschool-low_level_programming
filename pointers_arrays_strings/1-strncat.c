@@ -25,3 +25,6 @@ char *_strncat(char *dest, char *src, int n)
 	if (i < n)
 		dest[dest_len + i] = '\0';
 
+	return dest;  // Add this line
+}
+
