@@ -1,20 +1,36 @@
 /**
- * _strncpy - Copies a string
- * @dest: The destination string
- * @src: The source string
- * @n: The maximum number of bytes to copy
- * Return: A pointer to the resulting string dest
+ * cap_string - Capitalizes all words of a string
+ * @str: The string to be modified
+ *
+ * Return: Pointer to the modified string
  */
-char *_strncpy(char *dest, char *src, int n)
-
+char *cap_string(char *str)
 {
-	int i;
+	int i = 0;
+	int capitalize_next = 1;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
+	while (str[i] != '\0')
+	{
+		if (capitalize_next && (str[i] >= 'a' && str[i] <= 'z'))
+		{
+			str[i] = str[i] - 32;
+		}
 
-	for (; i < n; i++)
-		dest[i] = '\0';
+		capitalize_next = 0;
 
-	return (dest);
+		switch (str[i])
+		{
+			case ' ': case '\t': case '\n':
+			case ',': case ';': case '.':
+			case '!': case '?': case '"':
+			case '(': case ')': case '{': case '}':
+				capitalize_next = 1;
+				break;
+		}
+
+		i++;
+	}
+
+	return (str);
 }
+
