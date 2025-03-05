@@ -2,10 +2,12 @@
 #include <stddef.h>
 
 /**
- * _strchr - function replica
- * @s: string where we will locate a character
- * @c: the character that we are looking for
- * Return: i for the first occurence of the character c if located, or NUL.
+ * _strchr - Locates a character in a string
+ * @s: The string to be searched
+ * @c: The character to locate
+ *
+ * Return: A pointer to the first occurrence of c in s,
+ *         or NULL if the character is not found
  */
 
 char *_strchr(char *s, char c)
@@ -16,9 +18,15 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-
 			return (&s[i]);
 		}
 	}
+
+	if (c == '\0')
+	{
+		return (&s[i]);
+	}
+
 	return (NULL);
 }
+
