@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc; /* Suppress unused variable warning */
-	printf("%s\n", argv[0]); /* Print the program name (with path if included) */
+	(void)argc;
+	printf("%s\n", argv[0]); 
 	return (0);
 }
 
