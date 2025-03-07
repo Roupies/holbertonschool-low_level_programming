@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the program name
- * @argc: The number of command line arguments
+ * @argc: The number of command line arguments (unused)
  * @argv: An array containing the program command line arguments
  *
  * Return: Always 0 (Success)
