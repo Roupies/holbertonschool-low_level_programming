@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - display the name program
- * @argc: number of arrays
- * @argv: arguments arrays
+ * main - Prints the program name
+ * @argc: Number of command line arguments
+ * @argv: Array of command line arguments
  *
- * Return: Toujours 0 (Succès)
+ * Return: Always 0 (Success)
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
+	(void)argc; /* Unused parameter */
 	printf("%s\n", argv[0]);
 	return (0);
 }
