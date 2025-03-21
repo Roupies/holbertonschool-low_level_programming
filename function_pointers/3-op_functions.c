@@ -11,11 +11,6 @@
  */
 int op_add(int a, int b)
 {
-	if ((b > 0 && a > INT_MAX - b) || (b < 0 && a < INT_MIN - b))
-	{
-		fprintf(stderr, "Error: Integer overflow\n");
-		exit(100);
-	}
 	return (a + b);
 }
 
@@ -28,11 +23,6 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-	if ((b > 0 && a < INT_MIN + b) || (b < 0 && a > INT_MAX + b))
-	{
-		fprintf(stderr, "Error: Integer overflow\n");
-		exit(100);
-	}
 	return (a - b);
 }
 
@@ -45,12 +35,6 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	if ((a > 0 && ((b > 0 && a > INT_MAX / b) || (b < 0 && a > INT_MIN / b))) ||
-			(a < 0 && ((b > 0 && a < INT_MIN / b) || (b < 0 && a < INT_MAX / b))))
-	{
-		fprintf(stderr, "Error: Integer overflow\n");
-		exit(100);
-	}
 	return (a * b);
 }
 
@@ -63,11 +47,6 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	if (b == 0 || (a == INT_MIN && b == -1))
-	{
-		fprintf(stderr, "Error: Division by zero or overflow\n");
-		exit(100);
-	}
 	return (a / b);
 }
 
@@ -80,10 +59,5 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		fprintf(stderr, "Error: Division by zero\n");
-		exit(100);
-	}
 	return (a % b);
 }
