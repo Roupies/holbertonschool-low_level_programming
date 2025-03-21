@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_list params;
 	unsigned int i;
 
-	if (n == O)
+	if (n == 0)
 	{
 		return (0);
 	}
