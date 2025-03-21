@@ -13,6 +13,10 @@ int sum_them_all(const unsigned int n, ...)
 	va_list params;
 	unsigned int i;
 
+	if (n == O)
+	{
+		return (0);
+	}
 	va_start(params, n);
 
 	for (i = 0; i < n; ++i)
