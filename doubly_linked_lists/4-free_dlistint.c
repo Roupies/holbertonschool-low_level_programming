@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_dlistint_t - frees a dlistint_t list
+ * free_dlistint - frees a dlistint_t list
  * @head: pointer to the first node of the list
  *
  * Description: This function traverses the entire linked list, frees each
