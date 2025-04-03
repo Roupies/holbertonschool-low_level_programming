@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * get_nodeint_at_index - fonction that returns nth node of a dlistint_t list
+ * get_dnodeint_at_index - fonction that returns nth node of a dlistint_t list
  * @head: pointer to the first node in the list
  * @index: index of the nth node
  *
